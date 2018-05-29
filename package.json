@@ -1,0 +1,32 @@
+{
+  "name": "node-naive-bayes",
+  "version": "0.1.0",
+  "description": "A Nodejs Naive Bayes implementation",
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IkechukwuAKalu/node-naive-bayes.git"
+  },
+  "keywords": [
+    "naive",
+    "bayes",
+    "ml"
+  ],
+  "author": "Ikechukwu A. Kalu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IkechukwuAKalu/node-naive-bayes/issues"
+  },
+  "homepage": "https://github.com/IkechukwuAKalu/node-naive-bayes#README",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0"
+  }
+}
