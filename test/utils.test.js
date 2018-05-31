@@ -3,7 +3,7 @@ const {assert} = require('chai');
 
 describe('/lib/utils.js', () => {
 
-    describe('#extractFeatures', () => {
+    describe('#extractFeatures()', () => {
         it('should extract the unique words from a text', () => {
             let features = utils.extractFeatures("Hello you- man. how are you >? # Man");
             assert.typeOf(features, 'Set');
