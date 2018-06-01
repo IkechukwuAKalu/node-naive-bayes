@@ -1,7 +1,6 @@
 const NaiveBayes = require('./index');
-const {extractFeatures} = require('./lib/utils');
 
-const naiveBayes = new NaiveBayes(extractFeatures);
+const naiveBayes = new NaiveBayes();
 
 train();
 console.log('training once...');
