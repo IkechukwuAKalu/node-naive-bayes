@@ -22,7 +22,18 @@ for (let i = 0; i < 10; i++) {
 console.log('quick money: ', naiveBayes.classify('quick money', 'unknown'));
 
 
+// used to switch between both training modes easily by changing the function to call
 function train() {
+    trainFromFile();
+}
+
+// helper method to train from file
+function trainFromFile() {
+    naiveBayes.trainFromFile('./data.txt');
+}
+
+// helper method for training the classifier
+function trainInline() {
     naiveBayes.trainInline('Nobody owns the water.', 'good');
     naiveBayes.trainInline('the quick rabbit jumps fences', 'good');
     naiveBayes.trainInline('buy pharmaceuticals now', 'bad');
