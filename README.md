@@ -7,7 +7,7 @@ The algorithm used here is based on a book, "Programming Collective Intelligence
 ## Usage
 
 ```js
-const NaiveBayes = require('./index');
+const NaiveBayes = require('node-naive-bayes');
 
 const naiveBayes = new NaiveBayes();
 
@@ -24,13 +24,20 @@ naiveBayes.setThreshold('bad', 3);
 ### Training methods
 There are two methods of training the classifier;
 - **Inline**
-```js
-naiveBayes.trainInline('make quick money at the online casino', 'bad');
-```
+    ```js
+    naiveBayes.trainInline('make quick money at the online casino', 'bad');
+    ```
+    This function accepts two parameters; first is the `training text` and second is the `category`
 - **From files**
-```js
-naiveBayes.trainFromFile('path_to_file');
-```
+
+    This has the format of `text:::category` and are separated by new lines.
+
+    Example is: `make quick money at the online casino:::bad`
+
+    After which, you let the classifier know about the file like below
+    ```js
+    naiveBayes.trainFromFile('path_to_file');
+    ```
 
 ## Contribution
 Feel free to contact me or send PRs for improvements
