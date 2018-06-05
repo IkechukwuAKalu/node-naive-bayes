@@ -1,6 +1,6 @@
 {
   "name": "node-naive-bayes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Nodejs Naive Bayes implementation",
   "engines": {
     "node": ">=8.9.1"
