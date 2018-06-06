@@ -28,6 +28,15 @@ There are two methods of training the classifier;
     naiveBayes.trainInline('make quick money at the online casino', 'bad');
     ```
     This function accepts two parameters; first is the `training text` and second is the `category`
+
+    **Update:** You can now save training data to a file so that they can be easily reused later. You do this by passing `true` as the third parameter and then the `path` to the file as the fourth.
+    ```js
+    ...
+    naiveBayes.trainInline('join bet to make excess cash in one day', 'bad', true, './my_file.txt');
+    ...
+    // next time just do like below, to reuse the training data
+    naiveBayes.trainFromFile('./my_file.txt');
+    ```
 - **From files**
 
     This has the format of `text:::category` and are separated by new lines.

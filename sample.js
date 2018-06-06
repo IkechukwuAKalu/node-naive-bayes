@@ -20,6 +20,8 @@ for (let i = 0; i < 10; i++) {
 
 console.log('quick money: ', naiveBayes.classify('quick money', 'unknown'));
 
+//naiveBayes.trainInline('join bet to make excess cash in one day', 'bad', true, './aa.txt');
+naiveBayes.trainFromFile('./aa.txt');
 
 // used to switch between both training modes easily by changing the function to call
 function train() {
