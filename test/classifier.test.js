@@ -11,6 +11,10 @@ describe('/lib/classifier.js', () => {
         classifier = new Classifier(extractFeatures(text), null);
     });
 
+    afterEach(() => {
+        classifier = null;
+    });
+
     describe('#increaseFeatureCount()', () => {
         it('increase the value of a feature', () => {
             classifier.increaseFeatureCounts('job', 'good');
